@@ -12,15 +12,12 @@ public class SortedSwap {
 		if (left == -1) {
 			return true;
 		}
-
-		if (right == -1) {
 			for (int i = A.length - 1; i > left; i--) {
 				if (A[i] < A[left]) {
 					right = i;
 					break;
 				}
 			}
-		}
 
 		swap(A, left, right);
 
